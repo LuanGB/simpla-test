@@ -83,6 +83,8 @@
 <link rel="import" href="bower_components/simpla-text/simpla-text.html">
 <link rel="import" href="bower_components/simpla-img/simpla-img.html">
 <link rel="import" href="bower_components/simpla-admin/simpla-admin.html" async>
+<link rel="import" href="/bower_components/simpla-collection/simpla-collection.html">
+<link rel="import" href="/bower_components/simpla-paths/simpla-paths.html">
 
 </head>
 
@@ -673,21 +675,21 @@
 
   	<div class="wrapper">
   		<ul class="schedule-content">
-  			<simpla-collection path="/programas">
+  			<simpla-collection sid='programas'>
 					<template>
 						<li class="item">
 							<figure class="photo">
 								<a href="<update>">
-	    						<img is="simpla-img" path="/programas/[item]/img">
+	    						<img is="simpla-img" sid='[item]/img'>
 								</a>
 							</figure>
 
-							<h4 class="tvpontanegra_title"><simpla-text path="/programas/[item]/title"></simpla-text></h4>
-							<p class="description"><simpla-text path="/programas/[item]/description"></simpla-text></p>
+							<h4 class="tvpontanegra_title"><simpla-text sid="/[item]/title"></simpla-text></h4>
+							<p class="description"><simpla-text sid="/[item]/description"></simpla-text></p>
 
 							<div class="tvpontanegra_info">
-								<simpla-text path="/programas/[item]/dias" plaintext></simpla-text>
-								<small class="hour"><simpla-text path="/programas/[item]/horario" plaintext></simpla-text></small>
+								<simpla-text sid="/[item]/dias" plaintext></simpla-text>
+								<small class="hour"><simpla-text sid="/[item]/horario" plaintext></simpla-text></small>
 							</div>
 						</li>
 					</template>

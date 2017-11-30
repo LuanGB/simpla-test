@@ -84,6 +84,7 @@
 <link rel="import" href="bower_components/simpla-img/simpla-img.html">
 <link rel="import" href="/bower_components/simpla-collection/simpla-collection.html">
 <link rel="import" href="/bower_components/simpla-paths/simpla-paths.html">
+<link rel="import" href="/bower_components/simpla-link/simpla-link.html">
 <link rel="import" href="bower_components/simpla-admin/simpla-admin.html">
 
 </head>
@@ -238,24 +239,18 @@
     			</div>
     		</nav>
     		<section class="programs programs-no-before">
-    			<div id="arena" class="program-content current-tab">
+    			<div id="program1" class="program-content current-tab">
     				<div class="player">
     					<div class="video">
-    						<button class="button button-play-on-player watch-now button-play" data-player="play" data-player-id="arena">
-    							<i class="material-icons">play_circle_outline</i>
-    						</button>
-
-    						<div class="cover" data-cover="https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/8/WhatsApp_Image_2017-09-13_at_15.36.37.jpeg" style="background-image: url(&quot;https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/8/WhatsApp_Image_2017-09-13_at_15.36.37.jpeg&quot;);"></div>
-    						<iframe class="vimeo-player" src="./Tv Ponta Negra_files/244065963.html" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    						<simpla-video path="/video1"></simpla-video>
     					</div>
     				</div>
 
     				<div class="panel panel-no-before" data-background="#38b549" style="background-color: rgb(56, 181, 73);">
     					<div class="info">
-    						<h3 class="title">Arena</h3>
+    						<h3 class="title"><simpla-text sid="/video1-title" plaintext></simpla-text></h3>
     						<small class="description">
-    							Qua, 22 de Nov de 2017 |
-    							11h40
+    							<simpla-text sid="/video1-description" plaintext></simpla-text>
     						</small>
     					</div>
     				</div>
@@ -263,402 +258,140 @@
     				<div class="scroll">
     					<div class="inner">
     						<ul class="timeline">
-    							<li class="item">
-    								<small class="start_at">
-    									<i class="material-icons">schedule</i>
-    								</small>
+    							<simpla-collection sid='edition_section'>
+    								<template>
+    									<li class="item">
+    										<small class="start_at">
+    											<i class="material-icons">schedule</i>
+    										</small>
 
-    								<div class="info">
-    									<h4 class="title">Confira os destaques do Arena desta quarta-feira. </h4>
-
-    									<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/8/video/3954/session/9747"></span>
-                          comentários
-                        </a>                        -->
+    										<div class="info">
+    											<h4 class="title"><simpla-text sid="[item]/section" plaintext></h4>
                       </div>
-
+											
+											<!-- Tem que pensar numa estratégia pra isso aqui... -->
                       <button data-action="play" data-timeline="1.0" data-timeline-id="arena" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/8/video/3954/session/9747" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f38e6e2fd28584c" name="f2fc48e583bdf98" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments.html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
                     </li>
-                    <li class="item">
-                    	<small class="start_at">
-                    		<i class="material-icons">schedule</i>
-                    	</small>
-
-                    	<div class="info">
-                    		<h4 class="title">Campeonato de Surf alternativo reúne atletas potiguares em Ponta Negra. Entrevista com o técnico do Força e Luz, Higor César. Globo se reapresenta com fôlego renovado para a temporada 2018.</h4>
-
-                    		<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/8/video/3954/session/9748"></span>
-                          comentários
-                        </a>                        -->
-                      </div>
-
-                      <button data-action="play" data-timeline="65.0" data-timeline-id="arena" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/8/video/3954/session/9748" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f2134be0bdf1ff4" name="fb70be69a60f5c" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(1).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
-                    </li>
-                  </ul>
-
-                <!--
-                <button class="button button-center">
-                  <span>Ver mais</span>
-                  <i class="material-icons">keyboard_arrow_down</i>
-                </button>
-              -->
+                  </template>
+                </simpla-collection>
+              </ul>
             </div>
           </div>
         </div>
-        <div id="mais" class="program-content">
-        	<div class="player">
-        		<div class="video">
-        			<button class="button button-play-on-player watch-now button-play" data-player="play" data-player-id="mais">
-        				<i class="material-icons">play_circle_outline</i>
-        			</button>
+        <div id="program2" class="program-content current-tab">
+    				<div class="player">
+    					<div class="video">
+    						<simpla-video path="/video2"></simpla-video>
+    					</div>
+    				</div>
 
-        			<div class="cover" data-cover="https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/69/capa_de_video_MAIS.jpg" style="background-image: url(&quot;https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/69/capa_de_video_MAIS.jpg&quot;);"></div>
-        			<iframe class="vimeo-player" src="./Tv Ponta Negra_files/242662334.html" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-        		</div>
-        	</div>
+    				<div class="panel panel-no-before" data-background="#38b549" style="background-color: rgb(56, 181, 73);">
+    					<div class="info">
+    						<h3 class="title"><simpla-text sid="/video2-title" plaintext></simpla-text></h3>
+    						<small class="description">
+    							<simpla-text sid="/video2-description" plaintext></simpla-text>
+    						</small>
+    					</div>
+    				</div>
 
-        	<div class="panel panel-no-before" data-background="#811594" style="background-color: rgb(129, 21, 148);">
-        		<div class="info">
-        			<h3 class="title">Mais</h3>
-        			<small class="description">
-        				Sáb, 11 de Nov de 2017 |
-        				12h35
-        			</small>
-        		</div>
-        	</div>
+    				<div class="scroll">
+    					<div class="inner">
+    						<ul class="timeline">
+    							<simpla-collection sid='edition_section'>
+    								<template>
+    									<li class="item">
+    										<small class="start_at">
+    											<i class="material-icons">schedule</i>
+    										</small>
 
-        	<div class="scroll">
-        		<div class="inner">
-        			<ul class="timeline">
-        				<li class="item">
-        					<small class="start_at">
-        						<i class="material-icons">schedule</i>
-        					</small>
-
-        					<div class="info">
-        						<h4 class="title">Klayton Tigre e Flávio Gentil entrevistam Rodrigo teaser, cover oficial do Michael Jackson no Brasil</h4>
-
-        						<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/69/video/3791/session/9366"></span>
-                          comentários
-                        </a>                        -->
+    										<div class="info">
+    											<h4 class="title"><simpla-text sid="[item]/section" plaintext></h4>
                       </div>
-
-                      <button data-action="play" data-timeline="1.0" data-timeline-id="mais" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/69/video/3791/session/9366" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="ff6da04a3c412" name="f1acaab79fcaf14" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(2).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
+											
+											<!-- Tem que pensar numa estratégia pra isso aqui... -->
+                      <button data-action="play" data-timeline="1.0" data-timeline-id="arena" class="button watch-now button-play">Assista Agora</button>
                     </li>
-                    <li class="item">
-                    	<small class="start_at">
-                    		<i class="material-icons">schedule</i>
-                    	</small>
-
-                    	<div class="info">
-                    		<h4 class="title">Banda Grafith comemora 29° aniversário com super evento na Shock Show</h4>
-
-                    		<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/69/video/3791/session/9367"></span>
-                          comentários
-                        </a>                        -->
-                      </div>
-
-                      <button data-action="play" data-timeline="1068.0" data-timeline-id="mais" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/69/video/3791/session/9367" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f30fd96fbc4686c" name="f2efb173bc8545c" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(3).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
-                    </li>
-                    <li class="item">
-                    	<small class="start_at">
-                    		<i class="material-icons">schedule</i>
-                    	</small>
-
-                    	<div class="info">
-                    		<h4 class="title">Carla Cristina leva Diego Negrellos em ensaio de verão no Pelourinho</h4>
-
-                    		<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/69/video/3791/session/9368"></span>
-                          comentários
-                        </a>                        -->
-                      </div>
-
-                      <button data-action="play" data-timeline="1674.0" data-timeline-id="mais" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/69/video/3791/session/9368" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f29dda24a1c206" name="f218acf026489dc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(4).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
-                    </li>
-                  </ul>
-
-                <!--
-                <button class="button button-center">
-                  <span>Ver mais</span>
-                  <i class="material-icons">keyboard_arrow_down</i>
-                </button>
-              -->
+                  </template>
+                </simpla-collection>
+              </ul>
             </div>
           </div>
         </div>
-        <div id="jornal-do-estado" class="program-content">
-        	<div class="player">
-        		<div class="video">
-        			<button class="button button-play-on-player watch-now button-play" data-player="play" data-player-id="jornal-do-estado">
-        				<i class="material-icons">play_circle_outline</i>
-        			</button>
+				<div id="program3" class="program-content current-tab">
+    				<div class="player">
+    					<div class="video">
+    						<simpla-video path="/video3"></simpla-video>
+    					</div>
+    				</div>
 
-        			<div class="cover" data-cover="https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/28/capa_de_video_JORNAL_DO_ESTADO.jpg" style="background-image: url(&quot;https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/28/capa_de_video_JORNAL_DO_ESTADO.jpg&quot;);"></div>
-        			<iframe class="vimeo-player" src="./Tv Ponta Negra_files/244184578.html" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-        		</div>
-        	</div>
+    				<div class="panel panel-no-before" data-background="#38b549" style="background-color: rgb(56, 181, 73);">
+    					<div class="info">
+    						<h3 class="title"><simpla-text sid="/video3-title" plaintext></simpla-text></h3>
+    						<small class="description">
+    							<simpla-text sid="/video3-description" plaintext></simpla-text>
+    						</small>
+    					</div>
+    				</div>
 
-        	<div class="panel panel-no-before" data-background="#ff800a" style="background-color: rgb(255, 128, 10);">
-        		<div class="info">
-        			<h3 class="title">Jornal do Estado</h3>
-        			<small class="description">
-        				Qua, 22 de Nov de 2017 |
-        				19h20
-        			</small>
-        		</div>
-        	</div>
+    				<div class="scroll">
+    					<div class="inner">
+    						<ul class="timeline">
+    							<simpla-collection sid='edition_section'>
+    								<template>
+    									<li class="item">
+    										<small class="start_at">
+    											<i class="material-icons">schedule</i>
+    										</small>
 
-        	<div class="scroll">
-        		<div class="inner">
-        			<ul class="timeline">
-        				<li class="item">
-        					<small class="start_at">
-        						<i class="material-icons">schedule</i>
-        					</small>
-
-        					<div class="info">
-        						<h4 class="title">Polícia investiga participação de servidores públicos em crimes praticados dentro do sistema prisional do estado. Prefeitura realiza operação para retirada de catadores do antigo lixão de Cidade Nova. </h4>
-
-        						<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/28/video/3971/session/9784"></span>
-                          comentários
-                        </a>                        -->
+    										<div class="info">
+    											<h4 class="title"><simpla-text sid="[item]/section" plaintext></h4>
                       </div>
-
-                      <button data-action="play" data-timeline="1.0" data-timeline-id="jornal-do-estado" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/28/video/3971/session/9784" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f3d617f27e1c2c" name="f2ef1b309c27f8c" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(5).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
+											
+											<!-- Tem que pensar numa estratégia pra isso aqui... -->
+                      <button data-action="play" data-timeline="1.0" data-timeline-id="arena" class="button watch-now button-play">Assista Agora</button>
                     </li>
-                    <li class="item">
-                    	<small class="start_at">
-                    		<i class="material-icons">schedule</i>
-                    	</small>
-
-                    	<div class="info">
-                    		<h4 class="title">Série sobre os dez anos da Ponte Newton Navarro mostra a opinião do natalense a respeito da construção. Na semana Nacional de Doação de sangue, Hemonorte realiza campanha para abastecer o estoque.</h4>
-
-                    		<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/28/video/3971/session/9785"></span>
-                          comentários
-                        </a>                        -->
-                      </div>
-
-                      <button data-action="play" data-timeline="890.0" data-timeline-id="jornal-do-estado" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/28/video/3971/session/9785" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f25866b379ff464" name="f4f234ff3b8f48" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(6).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
-                    </li>
-                  </ul>
-
-                <!--
-                <button class="button button-center">
-                  <span>Ver mais</span>
-                  <i class="material-icons">keyboard_arrow_down</i>
-                </button>
-              -->
+                  </template>
+                </simpla-collection>
+              </ul>
             </div>
           </div>
         </div>
-        <div id="jornal-do-dia" class="program-content">
-        	<div class="player">
-        		<div class="video">
-        			<button class="button button-play-on-player watch-now button-play" data-player="play" data-player-id="jornal-do-dia">
-        				<i class="material-icons">play_circle_outline</i>
-        			</button>
+        <div id="program4" class="program-content current-tab">
+    				<div class="player">
+    					<div class="video">
+    						<simpla-video path="/video4"></simpla-video>
+    					</div>
+    				</div>
 
-        			<div class="cover" data-cover="https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/1/capa_de_video_JD.jpg" style="background-image: url(&quot;https://assets.sistemaopiniao.tv.br/tvpontanegra/uploads/program/cover/1/capa_de_video_JD.jpg&quot;);"></div>
-        			<iframe class="vimeo-player" src="./Tv Ponta Negra_files/244091870.html" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-        		</div>
-        	</div>
+    				<div class="panel panel-no-before" data-background="#38b549" style="background-color: rgb(56, 181, 73);">
+    					<div class="info">
+    						<h3 class="title"><simpla-text sid="/video4-title" plaintext></simpla-text></h3>
+    						<small class="description">
+    							<simpla-text sid="/video4-description" plaintext></simpla-text>
+    						</small>
+    					</div>
+    				</div>
 
-        	<div class="panel panel-no-before" data-background="#0c758a" style="background-color: rgb(12, 117, 138);">
-        		<div class="info">
-        			<h3 class="title">Jornal do Dia</h3>
-        			<small class="description">
-        				Qua, 22 de Nov de 2017 |
-        				13h30
-        			</small>
-        		</div>
-        	</div>
+    				<div class="scroll">
+    					<div class="inner">
+    						<ul class="timeline">
+    							<simpla-collection sid='edition_section'>
+    								<template>
+    									<li class="item">
+    										<small class="start_at">
+    											<i class="material-icons">schedule</i>
+    										</small>
 
-        	<div class="scroll">
-        		<div class="inner">
-        			<ul class="timeline">
-        				<li class="item">
-        					<small class="start_at">
-        						<i class="material-icons">schedule</i>
-        					</small>
-
-        					<div class="info">
-        						<h4 class="title">Especialistas alertam que o melhor é não ceder ao impulso na Black Friday para evitar dívidas futuras. Fórum de Debates sobre a América Latina na Itália alerta as oportunidades de investimento no Brasil.</h4>
-
-        						<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/1/video/3958/session/9756"></span>
-                          comentários
-                        </a>                        -->
+    										<div class="info">
+    											<h4 class="title"><simpla-text sid="[item]/section" plaintext></h4>
                       </div>
-
-                      <button data-action="play" data-timeline="1.0" data-timeline-id="jornal-do-dia" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/1/video/3958/session/9756" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f304603bcbc686c" name="f3daf198c04b378" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(7).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
+											
+											<!-- Tem que pensar numa estratégia pra isso aqui... -->
+                      <button data-action="play" data-timeline="1.0" data-timeline-id="arena" class="button watch-now button-play">Assista Agora</button>
                     </li>
-                    <li class="item">
-                    	<small class="start_at">
-                    		<i class="material-icons">schedule</i>
-                    	</small>
-
-                    	<div class="info">
-                    		<h4 class="title">Partido socialista brasileiro entra com uma ação no Supremo Tribunal Federal para evitar vantagens durante a campanha eleitoral de 2018.</h4>
-
-                    		<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/1/video/3958/session/9757"></span>
-                          comentários
-                        </a>                        -->
-                      </div>
-
-                      <button data-action="play" data-timeline="1340.0" data-timeline-id="jornal-do-dia" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/1/video/3958/session/9757" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f1c3f877a37cd4c" name="f3a4cc5af4734dc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(8).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
-                    </li>
-                    <li class="item">
-                    	<small class="start_at">
-                    		<i class="material-icons">schedule</i>
-                    	</small>
-
-                    	<div class="info">
-                    		<h4 class="title">O procurador-geral de contas do estado Ricart César para falar sobre o saldo do FUNFIR.</h4>
-
-                    		<!-- <a class="to_comment" href="#">Comentar</a> -->
-
-                        <!--
-                        <a class="shared" href="#">
-                          <i class="material-icons">share</i>
-                        </a>                        -->
-
-                        <!--
-                        <a class="comments" href="#">
-                          <span class="fb-comments-count" data-href="http://www.tvpontanegra.com.br/program/1/video/3958/session/9758"></span>
-                          comentários
-                        </a>                        -->
-                      </div>
-
-                      <button data-action="play" data-timeline="1764.0" data-timeline-id="jornal-do-dia" class="button watch-now button-play">Assista Agora</button>
-
-                      <div class="comments_f">
-                      	<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid" data-mobile="true" data-href="http://www.tvpontanegra.com.br/program/1/video/3958/session/9758" data-width="100%" data-numposts="5" fb-xfbml-state="rendered"><span style="height: 890px;"><iframe id="f18272d081c81b4" name="f2ddd5d04d3a1d" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="./Tv Ponta Negra_files/comments(9).html" style="border: none; overflow: hidden; height: 890px; width: 100%;"></iframe></span></div>
-                      </div>
-                    </li>
-                  </ul>
-
-                <!--
-                <button class="button button-center">
-                  <span>Ver mais</span>
-                  <i class="material-icons">keyboard_arrow_down</i>
-                </button>
-              -->
+                  </template>
+                </simpla-collection>
+              </ul>
             </div>
           </div>
         </div>
@@ -676,52 +409,34 @@
   	<div class="wrapper">
   		<ul class="schedule-content">
   			<simpla-collection sid='programas'>
-					<template>
-						<li class="item">
-							<figure class="photo">
-								<a href="<update>">
-	    						<img is="simpla-img" sid='[item]/img'>
-								</a>
-							</figure>
+  				<template>
+  					<li class="item">
+  						<simpla-link sid="[item]">
+	  						<figure class="photo">
+	  							<img is="simpla-img" sid='[item]/img'>
+	  						</figure>
 
-							<h4 class="tvpontanegra_title"><simpla-text sid="[item]/title"></simpla-text></h4>
-							<p class="description"><simpla-text sid="[item]/description"></simpla-text></p>
+	  						<h4 class="tvpontanegra_title"><simpla-text sid="[item]/title"></simpla-text></h4>
+	  						<p class="description"><simpla-text sid="[item]/description"></simpla-text></p>
 
-							<div class="tvpontanegra_info">
-								<simpla-text sid="[item]/dias" plaintext></simpla-text>
-								<small class="hour"><simpla-text sid="[item]/horario" plaintext>testeteste</simpla-text></small>
-							</div>
-						</li>
-					</template>
-				</simpla-collection>
+	  						<div class="tvpontanegra_info">
+	  							<simpla-text sid="[item]/dias" plaintext></simpla-text>
+	  							<small class="hour"><simpla-text sid="[item]/horario" plaintext>testeteste</simpla-text></small>
+	  						</div>
+  						</simpla-link>
+  					</li>
+  				</template>
+  			</simpla-collection>
   		</ul>
   	</div>
   </section>
-
-<!--
-<div class="social-medias">
-  <div class="wrapper">
-    <section class="instagram">
-  <h3 class="titles bg-orange">
-    <i class="fa fa-instagram"></i>
-    Instagram
-  </h3>
-
-  <div class="wrapper">
-    <iframe src="//users.instush.com/bee-gallery-v2/?cols=3&rows=3&size=medium&border=0&round=false&space=4&sl=true&bg=transparent&brd=false&na=false&pin=false&hc=f50c37&ltc=ffffff&lpc=140f66&fc=ffffff&user_id=181703758&username=tvpontanegrarn&sid=-1&susername=-1&tag=-1&stype=mine&t=999999cQvnurRYN_zydJLJvnPRtsS-BQ1YkVylrxTOXlZB_nSnO3IN5voygd1Eb6GntrdC2QIt19Th05U" allowtransparency="true" frameborder="0" scrolling="no"  style="display:block;width:100%;height:640px;border:none;overflow:visible;" ></iframe>
-  </div>
-</section>
-
-  </div>
-</div>
--->
 
 <footer class="footer">
 	<nav class="nav-footer wrapper">
 		<div class="nav-footer-right">
 			<ul class="useful-links">
 
-				<li class="tvpontanegra-item"><a class="link programs" href="https://www.tvpontanegra.com.br/programas">Programas</a></li>
+				<li class="tvpontanegra-item">simpla-link<a class="link programs" href="https://www.tvpontanegra.com.br/programas">Programas</a></li>
 				<li class="tvpontanegra-item"><a class="link commercial" href="https://www.tvpontanegra.com.br/comercial">Comercial</a></li>
 				<li class="tvpontanegra-item"><a class="link intranet" target="_blank" href="http://mail.sistemaopiniao.com.br/">Intranet</a></li>
 				<li class="tvpontanegra-item"><a class="link coverage" href="https://www.tvpontanegra.com.br/cobertura">Cobertura</a></li>
